@@ -54,14 +54,36 @@ svg {
 
 svg:hover {
     transform: scale(1.3);
-    transition: ease-in-out 500ms;
+    transition: all 0.5s ease-in-out;
 }
 
 .animate__fadeInBottomRight {
-    display: flex;
     --animate-duration: 2s;
     max-width: 800px;
     min-height: 100px;
     font-style: bold;
     font-size: 3rem;
+}
+
+@keyframes pulse-color {
+    0% {
+        transform: scale(1);
+        color: blue;
+      }
+      50% {
+        transform: scale(1.5);
+        color: red;
+      }
+      100% {
+        transform: scale(1);
+        color: blue;
+      }
+}
+
+.sundsgarden {
+    animation: pulse-color 1000ms;
+    animation-delay: 10sec;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
 }
