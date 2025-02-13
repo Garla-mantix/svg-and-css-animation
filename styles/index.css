@@ -31,7 +31,7 @@
     text-align: center;
 }
 
-.welcome__message {
+.message {
     display: flex;
     max-width: 600px;
     min-height: 50px;
