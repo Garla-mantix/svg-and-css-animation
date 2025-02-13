@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
+    <script src="https://kit.fontawesome.com/aafa7cdabb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>SVG and CSS Animations</title>
 </head>
@@ -12,7 +13,7 @@
     <main class="screen">
         <div class="main-container">
             <h1 class="text animate__animated animate__fadeInBottomRight">Welcome to <br> <span class="text sundsgarden">Sundsgårdens birthday party!</span></h1>
-            <p class="text message">Click one of the buttons to RSVP, and let us know if you have any allergies or other dietary preferences.</p>
+            <p class="text message">Click the green or red button to RSVP. <br> And let us know if you have any allergies or other dietary preferences by pressing the envelope.</p>
             <div class="svg-container">
                 <svg class="affirmative" width="240" height="240" viewbox="0 0 220 220" fill="none" xmlns="www.w3.org/2000/svg">
                     <circle cx="110" cy="110" r="100" stroke-width="20" fill="white" stroke="green"/>
@@ -27,6 +28,9 @@
                                 stroke-linejoin="none"/>
                 </svg>
             </div>
+            <i class="fa-solid fa-envelope"></i>
+            
+            
             <svg>
                 <use href="images/negative.svg#negative-button"></use>
             </svg>
